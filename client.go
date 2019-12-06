@@ -465,11 +465,9 @@ func configToOptions(cfg *config.Config) ([]ClientOptionFunc, error) {
 		if cfg.Sniff != nil {
 			options = append(options, SetSniff(*cfg.Sniff))
 		}
-		/*
-			if cfg.Healthcheck != nil {
-				options = append(options, SetHealthcheck(*cfg.Healthcheck))
-			}
-		*/
+		if cfg.Healthcheck != nil {
+			options = append(options, SetHealthcheck(*cfg.Healthcheck))
+		}
 	}
 	return options, nil
 }
