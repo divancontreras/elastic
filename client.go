@@ -21,7 +21,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/divancontreras/elastic/v7/config"
+	"github.com/divancontreras/elastic/config"
 )
 
 const (
